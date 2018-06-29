@@ -1,0 +1,28 @@
+I want a great cli building tool. I have too many problems with playwright, Even
+though I accomplished a lot of my goals with it.
+
+Bad
+1. Way too namespaced. Everything should be simple. Rake tasks are simple.
+2. Too reliant on hanami::cli. I ended up having to monkey patch hanami. I
+   should just use ruby's native OptionParser.
+3. Dependency issues were very complicated.
+4. Shouldn't have bothered making server a hanami app.
+5. Turned bundler into a problem instead of using it as a solution
+
+
+Good
+1. Tools weren't bad. os, display, ask were cool.
+2. Generator was pretty dope.
+3. Worked.
+
+Needs
+Ability to accept variable options. (needed for loop-spec)
+Simple generator.
+Scripts are gems.
+Argument & Option parsing.
+Subcommand support. (I should investigate how hanami does it).
+Simple API wrapping tty tools.
+Make everything a module and include in a base class.
+
+Technical Goals
+1. Solid testing, including end-to-end tests.
